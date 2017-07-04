@@ -1,0 +1,9 @@
+$(document).ready(function(){
+  $(".clickable").click(function(){
+    $(".list-1").show();
+    $(".list-3").fadeIn(10000);
+  });
+  $(".list-2").click(function(){
+    $("#pretzelCupcake").fadeIn(4000);
+  });
+});
