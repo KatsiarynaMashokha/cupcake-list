@@ -1,9 +1,13 @@
 $(document).ready(function(){
-  $(".clickable").click(function(){
-    $(".list-1").show();
-    $(".list-3").fadeIn(10000);
+  $(".toggleGlobal").click(function(){
+    $(".list-2").toggle();
   });
-  $(".list-2").click(function(){
-    $("#pretzelCupcake").fadeIn(4000);
+
+  $(".toggleCosmic").click(function(){
+    $(".list-3").toggle();
+  });
+  
+  $(".toggleDomestic").click(function(){
+      $(".list-1").toggle();
   });
 });

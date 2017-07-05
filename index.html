@@ -3,32 +3,52 @@
   <head>
     <title>Cupcake Galore</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet"  type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="column">
-      <h1 class="flashy">Exotic Cupcakes from all 50 states!</h1>
-      <p>We have a variety of delectables produced locally with home-grown-grass-fed-organic-gluten-free-GMO-free sugar.</p>
-      <p>Perfect for a family party, a corporate function, or if you've just neen dumped!</p>
-      <a href="domestic.html">Domestic Delights!</a>
-
-      <div class="list-1">
-        <img src="https://s-media-cache-ak0.pinimg.com/736x/3a/09/da/3a09dae73073a8a10e8e020fea4fdfaa.jpg" alt="cinnamon cupcake">
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="domestic.html">Domestic Cupcakes</a></li>
+          <li><a href="intergalactic.html">Intergalactic Cupcakes</a></li>
+          <li><a href="international.html">International Cupcakes</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="container header">
+        <h1 class="flashy">Exotic Cupcakes from all 50 states!</h1>
+        <p>We have a variety of delectables produced locally with home-grown-grass-fed-organic-gluten-free-GMO-free sugar.</p>
+        <p>Perfect for a family party, a corporate function, or if you've just neen dumped!</p>
       </div>
 
-      <h1 class="flashy">Cupcakes from around the world!</h1>
-      <p>We source our cupcakes using locally sourced ingredients, employing local peoples, and transport our goods without the use of a combustion engine. Monsanto is our enemy!!</p>
-      <a href="international.html">Global Goodness!</a>
-
-      <div class="list-2">
-        <img src="https://s-media-cache-ak0.pinimg.com/736x/87/57/f8/8757f8fc37dcf793daf5f4fdf30bdbf8--beer-cupcakes-gourmet-cupcakes.jpg" alt="beer cupcake">
+      <div class="container domestics">
+        <h3><span class="clickable toggleDomestic">Domestic Delights!</span></h3>
+        <div class="list-1">
+          <img id="cinnamonCupcake" src="https://s-media-cache-ak0.pinimg.com/736x/3a/09/da/3a09dae73073a8a10e8e020fea4fdfaa.jpg" alt="cinnamon cupcake">
+        </div>
       </div>
 
-      <h1 class="flashy">Intergalctic Incredibles!</h1>
-      <p>Check out our cosmic creations!</p>
-      <a href="intergalactic.html">Intergalactic Incredibles</a>
+      <div class="container worldly">
+        <h1 class="flashy">Cupcakes from around the world!</h1>
+        <p>We source our cupcakes using locally sourced ingredients, employing local peoples, and transport our goods without the use of a combustion engine. Monsanto is our enemy!!</p>
+        <h3><span class="clickable toggleGlobal">Global Goodness!</span></h3>
+        <div class="list-2">
+          <img src="https://s-media-cache-ak0.pinimg.com/736x/87/57/f8/8757f8fc37dcf793daf5f4fdf30bdbf8--beer-cupcakes-gourmet-cupcakes.jpg" alt="pretzel cupcake">
+        </div>
+      </div>
 
-      <div class="list-3">
-        <img src="https://s-media-cache-ak0.pinimg.com/736x/dd/6b/f9/dd6bf9ae17921eccff5a1653fc2df472.jpg" alt="cosmic cupcake">
+      <div class="container internationals">
+        <h1 class="flashy">Intergalctic Incredibles!</h1>
+        <p>Check out our cosmic creations!</p>
+        <h3><span class="clickable toggleCosmic">Look at one here!</span></h3>
+
+        <div class="list-3">
+          <img id="cosmicCupcake" src="https://s-media-cache-ak0.pinimg.com/736x/dd/6b/f9/dd6bf9ae17921eccff5a1653fc2df472.jpg" alt="cosmic cupcake">
+        </div>
       </div>
     </div>
   </body>
